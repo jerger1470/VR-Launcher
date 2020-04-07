@@ -59,29 +59,30 @@ class LoginForm extends Component {
         } else {
             return (
                 <div className="jumbotron col-4">
-      <h1 className="display-4">Welcome to Space Orbital Station!</h1>
-      <p className="lead"></p>
-      <hr className="my-4"/> 
-      <div className="signIn container col-12">
-        <form className="form-signin">
+        <h1 className="display-4">Welcome to Space Orbital Station!</h1>
+            <p className="lead"></p>
+             <hr className="my-4"/> 
+             <div className="signIn container col-12">
+        <form className="form-horizontal">
           <img id="patch" class="patch" img src={logo}/>
           <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
-          <label for="inputEmail" class="sr-only">Username</label>
-          <input type="text"
-           id="username"
-           class="form-control"
-           placeholder="Username"
-           value={this.state.username}
-           onChange={this.handleChange}
-           />
-          <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password"
-           id="inputPassword" 
-           class="form-control" 
-           placeholder="Password" 
-           value={this.state.password}
-           onChange={this.handleChange}
-           />
+          <label className="form-label" htmlFor="username">Username</label>
+          <input className="form-input"
+                                    type="text"
+                                    id="username"
+                                    name="username"
+                                    placeholder="Username"
+                                    value={this.state.username}
+                                    onChange={this.handleChange}
+                                />
+          <label className="form-label" htmlFor="password">Password</label>
+          <input className="form-input"
+                                    placeholder="password"
+                                    type="password"
+                                    name="password"
+                                    value={this.state.password}
+                                    onChange={this.handleChange}
+                                />
           <div className="checkbox mb-3">
             <label>
               <input type="checkbox" value="remember-me"/> Remember me
