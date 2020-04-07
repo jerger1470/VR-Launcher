@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import axios from 'axios'
+import './assets/css/style.css'
+import logo from '../../src/components/assets/img/ISS_Insignia.png'
 
 class LoginForm extends Component {
     constructor() {
@@ -56,48 +58,45 @@ class LoginForm extends Component {
             return <Redirect to={{ pathname: this.state.redirectTo }} />
         } else {
             return (
-                <div>
-                    <h4>Login</h4>
-                    <form className="form-horizontal">
-                        <div className="form-group">
-                            <div className="col-1 col-ml-auto">
-                                <label className="form-label" htmlFor="username">Username</label>
-                            </div>
-                            <div className="col-3 col-mr-auto">
-                                <input className="form-input"
-                                    type="text"
-                                    id="username"
-                                    name="username"
-                                    placeholder="Username"
-                                    value={this.state.username}
-                                    onChange={this.handleChange}
-                                />
-                            </div>
-                        </div>
-                        <div className="form-group">
-                            <div className="col-1 col-ml-auto">
-                                <label className="form-label" htmlFor="password">Password: </label>
-                            </div>
-                            <div className="col-3 col-mr-auto">
-                                <input className="form-input"
-                                    placeholder="password"
-                                    type="password"
-                                    name="password"
-                                    value={this.state.password}
-                                    onChange={this.handleChange}
-                                />
-                            </div>
-                        </div>
-                        <div className="form-group ">
-                            <div className="col-7"></div>
-                            <button
-                                className="btn btn-primary col-1 col-mr-auto"
-                               
-                                onClick={this.handleSubmit}
-                                type="submit">Login</button>
-                        </div>
-                    </form>
-                </div>
+                <div className="jumbotron col-4">
+      <h1 className="display-4">Welcome to Space Orbital Station!</h1>
+      <p className="lead"></p>
+      <hr className="my-4"/> 
+      <div className="signIn container col-12">
+        <form className="form-signin">
+          <img id="patch" class="patch" img src={logo}/>
+          <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
+          <label for="inputEmail" class="sr-only">Username</label>
+          <input type="text"
+           id="username"
+           class="form-control"
+           placeholder="Username"
+           value={this.state.username}
+           onChange={this.handleChange}
+           />
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password"
+           id="inputPassword" 
+           class="form-control" 
+           placeholder="Password" 
+           value={this.state.password}
+           onChange={this.handleChange}
+           />
+          <div className="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"/> Remember me
+              <p className="create">Don't have a sign in? Create one <a href="./SignUp.html" class="link">Here</a></p>
+            </label>
+          </div>
+          <button
+              className="btn btn-lg btn-block"
+                           
+              onClick={this.handleSubmit}
+              type="submit">Login</button>
+          <p className="mt-5 mb-3 text-muted">Copyright &copy; 2020 Team Matrix. All Rights Reserved. </p>
+        </form> 
+      </div>
+    </div>
             )
         }
     }
