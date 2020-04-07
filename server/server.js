@@ -5,6 +5,7 @@ const session = require('express-session')
 const dbConnection = require('./database') 
 const MongoStore = require('connect-mongo')(session)
 const passport = require('./passport');
+const cors = require('cors');
 const app = express()
 const PORT = 8080
 // Route requires
@@ -28,6 +29,13 @@ app.use(
 		saveUninitialized: false //required
 	})
 )
+
+// cors origin URL - Allow inbound traffic from origin
+corsOptions = {
+	origin: "Your FrontEnd Website URL",
+	optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  };
+  app.use(cors(corsOptions));
 
 // Passport
 app.use(passport.initialize())
