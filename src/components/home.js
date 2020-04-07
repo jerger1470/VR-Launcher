@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import space from '../../src/components/assets/img/ISS.jpg'
 
 class Home extends Component {
     constructor() {
@@ -13,7 +14,7 @@ class Home extends Component {
         return (
             <div>
                 <h1>Welcome to the Space Station</h1>
-                
+                <img src = {space} />
             </div>
         )
 
