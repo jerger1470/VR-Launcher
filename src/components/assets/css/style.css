@@ -1,0 +1,64 @@
+.jumbotron{
+  margin: auto;
+  top: 100px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #291866;
+  border: 15px #da8f35 ;
+  box-shadow: 0 0 10px 12px #da8f35;
+  border-radius: 5rem;
+  color: #da8f35;
+}
+
+.create{
+  margin: 0em;
+}
+
+.patch{
+ display: block;
+ margin: auto;
+ width: 30%;
+}
+
+#inputEmail, #inputPassword {
+  width: 60% !important;
+  margin: auto;
+}
+
+.link{
+  font-weight: bold;
+}
+
+.btn{
+  background-color: #79bc2c;
+  color: #291866;
+  width: 25% ;
+  margin: auto;
+}
+
+#hsDiv {
+  /* text-decoration: underline;
+  padding-bottom: 0; */
+  margin-bottom: 0;
+}
+
+.hiScores{
+  padding-top: 0;
+  margin-top: 0;
+  min-height: 50px;
+  border: 1px solid #da8f35;
+  border-radius: .3rem;
+  margin: auto;  
+}
+
+
+
+temp{
+  color: #291866;
+  color: #da8f35;
+  color: #ea080a;
+  color: #79bc2c;
+  color: #add6da;
+  color: #000000;
+  color: #ffffff;
+}
