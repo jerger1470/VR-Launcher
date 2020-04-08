@@ -7,7 +7,7 @@ const MongoStore = require('connect-mongo')(session)
 const passport = require('./passport');
 const cors = require('cors');
 const app = express()
-const PORT = 8080
+const PORT = process.env.PORT || 8080;
 // Route requires
 const user = require('./routes/user')
 
@@ -40,6 +40,10 @@ corsOptions = {
 // Passport
 app.use(passport.initialize())
 app.use(passport.session()) // calls the deserializeUser
+
+if (process.env.NODE_ENV === "production") {
+	app.use(express.static("client/build"));
+  }
 
 
 // Routes
