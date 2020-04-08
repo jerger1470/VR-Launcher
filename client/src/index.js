@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom' //don't need to specify localho
 //style
 import 'spectre.css/dist/spectre.min.css';
 import 'spectre.css/dist/spectre-icons.css';
-import './index.css';
+
 
 ReactDOM.render(
 	<BrowserRouter>
