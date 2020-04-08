@@ -38,7 +38,7 @@ class Navbar extends Component {
                     <div className="col-4" >
                         {loggedIn ? (
                             <section className="navbar-section">
-                                <Link to="#" className="btn btn-link text-secondary" onClick={this.logout}>
+                                <Link to="/" className="btn btn-link text-secondary" onClick={this.logout}>
                                 <span className="text-secondary">logout</span></Link>
 
                             </section>

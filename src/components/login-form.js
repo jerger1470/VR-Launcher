@@ -41,9 +41,9 @@ class LoginForm extends Component {
                         loggedIn: true,
                         username: response.data.username
                     })
-                    // update the state to redirect to home
+                    // update the state to redirect to game
                     this.setState({
-                        redirectTo: '/'
+                        redirectTo: '/game'
                     })
                 }
             }).catch(error => {
