@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import space from '../../src/components/assets/img/ISS.jpg'
+import space from './assets/img/ISS.jpg'
 import {Container, Row, Col} from './grid'
 
 class Game extends Component {

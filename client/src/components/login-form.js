@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import axios from 'axios'
 import './assets/css/style.css'
-import logo from '../../src/components/assets/img/ISS_Insignia.png'
+import logo from './assets/img/ISS_Insignia.png'
 
 class LoginForm extends Component {
     constructor() {

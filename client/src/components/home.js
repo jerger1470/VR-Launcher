@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Container, Row, Col} from './grid'
-import logo from '../../src/components/assets/img/ISS_Insignia.png'
+import logo from './assets/img/ISS_Insignia.png'
 
 class Home extends Component {
     constructor() {
