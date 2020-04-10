@@ -64,7 +64,7 @@ class LoginForm extends Component {
              <hr className="my-4"/> 
              <div className="signIn container col-12">
         <form className="form-horizontal">
-          <img id="patch" class="patch" img src={logo}/>
+          <img id="patch" alt="logo" class="patch" img src={logo}/>
           <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
           <label className="form-label" htmlFor="username">Username</label>
           <input className="form-input"

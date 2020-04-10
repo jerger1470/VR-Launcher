@@ -56,7 +56,7 @@ render() {
       <hr className="my-4"/> 
       <div className="signIn container col-12">
         <form className="form-signin">
-          <img id="patch" class="patch" img src={logo}/>
+          <img id="patch" alt="logo" class="patch" img src={logo}/>
           <h1 className="h3 mb-3 font-weight-normal">Please sign up</h1>
           <label className="form-label" htmlFor="username">Username</label>
           <input className="form-input"
@@ -78,7 +78,7 @@ render() {
 						/>
               
           <div className="checkbox mb-3">         
-          <p className="signInLink">Already have a login? Click <a href="./SignIn.html" class="link"/> Here.</p>       
+                 
           </div>
           <button
 						className="btn btn-lg btn-block"

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom'
-import { Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import '../components/assets/css/App.css';
 import axios from 'axios'
 
@@ -38,7 +37,7 @@ class Navbar extends Component {
                     <div className="col-4" >
                         {loggedIn ? (
                             <section className="navbar-section">
-                                <Link to="/" className="btn btn-link text-secondary" onClick={this.logout}>
+                                <Link to="/home" className="btn btn-link text-secondary" onClick={this.logout}>
                                 <span className="text-secondary">logout</span></Link>
 
                             </section>
@@ -46,13 +45,16 @@ class Navbar extends Component {
                                 <section className="navbar-section">
                                     <Link to="/" className="btn btn-link text-secondary">
                                         <span className="text-secondary">home</span>
-                                        </Link>
+                                    </Link>
                                     <Link to="/login" className="btn btn-link text-secondary">
                                     <span className="text-secondary">login</span>
-				</Link>
+			                    	</Link>
                                     <Link to="/signup" className="btn btn-link">
                                     <span className="text-secondary">sign up</span>
-				</Link>
+			                    	</Link>
+                                    <Link to="/contact" className="btn btn-link">
+                                    <span className="text-secondary">contact</span>
+			                    	</Link>
                                 </section>
                             )}
                     </div>

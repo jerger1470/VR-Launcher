@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import space from './assets/img/ISS.jpg'
-import {Container, Row, Col} from './grid'
+import {Container} from './grid'
 
 class Game extends Component {
     constructor() {

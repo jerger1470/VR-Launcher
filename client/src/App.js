@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { Route, Link } from 'react-router-dom'
+import { Route} from 'react-router-dom'
 // components
 import Signup from './components/sign-up'
 import LoginForm from './components/login-form'
 import Navbar from './components/navbar'
 import Home from './components/home'
 import Game from './components/game'
+import Contact from './components/contact'
 
 class App extends Component {
   constructor() {
@@ -79,6 +80,11 @@ class App extends Component {
           path="/game"
           render={() =>
             <Game/>}
+        />
+        <Route
+          path="/contact"
+          render={() =>
+            <Contact/>}
         />
 
       </div>
